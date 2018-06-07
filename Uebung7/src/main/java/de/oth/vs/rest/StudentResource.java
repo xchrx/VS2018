@@ -30,15 +30,16 @@ import javax.xml.bind.Marshaller;
 @Path("studienangelegenheiten")
 public class StudentResource {
     
-    public List<Student>studentList = new ArrayList<Student>();
+   
     
     @GET
     @Path("student/{id}")
- @Produces(MediaType.APPLICATION_JSON)	
+    @Produces(MediaType.APPLICATION_JSON)	
     public Student getStudentById(@PathParam("id")int id) throws JAXBException{
+        
         System.out.println("Request STudentid:"+id);
-   Student chris = new Student(2000,"sepp","meyer");
-              return chris;
+        Student chris = new Student(2000,"sepp","meyer");
+        return chris;
 //     JAXBContext jc = JAXBContext.newInstance(Student.class);
 //     Student chris = new Student(2000,"sepp","meyer");
 //     Marshaller marshaller = jc.createMarshaller();
@@ -62,7 +63,7 @@ public class StudentResource {
      Student[] students = new Student[2];
      students[0] = new Student(2000,"sepp","meyer");
      students[1] = new Student(2000,"sepp","meyer");
-       System.out.println("return List of Students from"+from +" to: "+to );
+     System.out.println("return List of Students from"+from +" to: "+to );
      return students; 
     }
     
