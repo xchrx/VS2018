@@ -24,6 +24,7 @@ public class ServerREST {
         
         ResourceConfig config = new ResourceConfig();
         config.register(StudentResource.class);
+        config.register(PruefungsleistungResource.class);
 
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
         HttpHandler handler = RuntimeDelegate.getInstance().createEndpoint(config, HttpHandler.class);

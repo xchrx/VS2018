@@ -20,6 +20,25 @@ public class Adresse {
         this.Strasse = Strasse;
         this.Ort = Ort;
     }
+
+    public Adresse() {
+    }
+
+    public String getStrasse() {
+        return Strasse;
+    }
+
+    public void setStrasse(String Strasse) {
+        this.Strasse = Strasse;
+    }
+
+    public String getOrt() {
+        return Ort;
+    }
+
+    public void setOrt(String Ort) {
+        this.Ort = Ort;
+    }
     
   
 }

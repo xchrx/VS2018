@@ -16,9 +16,10 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * @author Chris
  */
-
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Student {
-
+@XmlAttribute
     public int matrikelNr;
     String vornamen;
     String nachnamen;
