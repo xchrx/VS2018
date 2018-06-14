@@ -55,7 +55,7 @@ public class SqlHelper {
        {
 
         Statement stmt = c.createStatement();
-        String query = "INSERT INTO Pruefungsleistung VALUES("+leistung.pruefungId+","+leistung.matrikelNr+","+leistung.versuch+","+leistung.note;
+        String query = "INSERT INTO Pruefungsleistung (pruefungId, matrikelNr, versuch, note) VALUES("+leistung.pruefungId+","+leistung.matrikelNr+","+leistung.versuch+","+leistung.note+")";
         stmt.executeQuery(query);
         
        query = "UPDATE Student SET ects = ects+"+etcsOfExam+" WHERE matrikelNr="+leistung.matrikelNr;
