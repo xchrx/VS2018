@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<student matrikelNr="222">
+    <vornamen>chris</vornamen>
+    <nachnamen>Jünger</nachnamen>
+    <ECTS>0</ECTS>
+    <adresse>
+        <ort>ohio</ort>
+        <strasse>zum Schwarzenberg 6 a</strasse>
+    </adresse>
+</student>

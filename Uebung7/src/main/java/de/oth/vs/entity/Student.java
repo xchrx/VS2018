@@ -32,6 +32,11 @@ public class Student {
         this.nachnamen = nachnamen;
     
     }
+    
+   public Student(int matrikelNr, String vornamen, String nachnamen, Adresse adresse) {
+       this(matrikelNr,vornamen, nachnamen);
+       this.adresse = adresse;
+     }
     public Student()
     {
         
